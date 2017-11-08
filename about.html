@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<link rel="stylesheet" type="text/CSS" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color:  #fff4e6">
+		<!--part of original navbar-->
+	<div class="navbar">
+	   <a href="index.html"><i class="fa fa-home"></i></a>
+	   <a href="about.html">ABOUT</a>
+	   <a href="experience.html">EXPERIENCE</a>
+	   <div class="contactDropdown">
+			<button class="contactDropbtn" onclick="myFunction()">CONTACT<i class="fa fa-caret-down"></i></button>
+				<div class="contactDropdown-content" id="myDropdown">
+      				<a href="mailto:prag11neupane@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px"></i>Pragya</a>
+     				<a href="#"><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px"></i>Check pdf resume</a>
+    			</div>
+    	</div>
+    </div>
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(e) {
+	  if (!e.target.matches('.contactDropbtn')) {
+	    var myDropdown = document.getElementById("myDropdown");
+	      if (myDropdown.classList.contains('show')) {
+	        myDropdown.classList.remove('show');
+	      }
+	  }
+	}
+	</script>
+	
+	<div class="education">
+		<h1>Education</h1>
+		<ul class="eductaionListbullets">
+			<li><h3>University of Texas Arlington, Arlington, TX (August 2013-May 2016)</h3></li>
+			<li><h2>Honors Bachelor of Science in Computer Science Cum Laude, GPA: 3.50</h2></li>
+			<ul style="font-size:18px">
+				<li>Object Oriented Programming: Used Java to implement inheritance, GUI, thread and design patterns.</li>
+				<li>Algorithms and Data Structures: Applied the different data structures (linked list, hash tables) and algorithms (binary search, merge sort, DFS and BFS) to achieve the most efficiency to a problem.</li>
+				<li>Operating Systems: Learnt about memory management, process synchronization, job scheduling and file system protection.</li>
+				<li>Software testing: Developed and tested a day trader training simulator by writing use cases as part of JUnit testing.</li>
+				<li>Software Project Management: Gained understanding of software development life cycle (SDLC), project issues, challenges, and maintenance with the help of real life examples.</li>
+			</ul>
+			<li><h3>North Lake College, Irving, TX (August 2012-May 2013)</h3></li>
+			<li><h2>Associates in Science, GPA: 3.92</h2></li>
+		</ul>
+
+		<div class="honors">
+		<h1>Honors/Awards</h1>
+		<ul style="font-size:18px">
+			<li>President’s Honor Roll- Spring 2012, Fall 2012, and Spring 2013</li>
+			<li>UTA’s Outstanding Transfer Scholarship and Cum Laude Latin Honors</li>
+			<li>James and Jean Redman Homework Helper Award for excellence in tutoring help.</li>
+		</ul>
+		</div>
+	</div>
+	
+
+	
+	<div class="skills">
+		<h1 align="center">Skills</h1>
+		<ul class="skillsListbullets">
+				<li>Languages:</li>
+					<ul>
+						<li>C#</li>
+						<li>Java</li>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>C</li>
+						<li>JavaScript</li>
+						<li>SQL</li>
+						<li>T-SQL</li>
+					</ul>
+
+				<li>Tools:</li>
+ 				 	<ul>
+ 				 		<li>TFS/GIT</li>
+ 				 		<li>Github</li>
+ 				 		<li> .NET Framework 4.5/4.0</li>
+ 				 		<li>ASP.NET MVC</li>
+ 				 		<li>Web API</li>
+ 				 		<li>Unit testing</li>
+ 				 	</ul>
+
+ 				<li>Software:</li>
+ 					<ul>
+ 						<li>Visual Studio 2010/2012/2013</li>
+ 						<li>Microsoft SQL Server</li>
+ 						<li>Postman</li>
+ 					</ul>
+
+ 				<li>Operating Systems:</li>
+ 					<ul>
+ 						<li>Windows 2000</li>
+ 						<li>Windows 7</li>
+ 						<li>Windows XP</li>
+ 						<li>Linux</li>
+		</ul>
+	</div>
+
+</body>
+</html>

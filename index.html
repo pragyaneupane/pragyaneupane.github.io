@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PNPortfolio</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body background="backgroundImage.jpg" style="padding-bottom: 80px">
+	<!--part of original navbar-->
+	<div class="navbar">
+	   <!--<a href="index.html"><img src="http://thumb10.shutterstock.com/thumb_large/167061944/527877547/stock-vector-pn-logo-527877547.jpg" class="logo"></a>-->
+	   <a href="#"><i class="fa fa-home"></i></a>
+	   <a href="about.html">ABOUT</a>
+	   <a href="experience.html">EXPERIENCE</a>
+	   <div class="contactDropdown">
+			<button class="contactDropbtn" onclick="myFunction()">CONTACT<i class="fa fa-caret-down"></i></button>
+				<div class="contactDropdown-content" id="myDropdown">
+      				<a href="mailto:prag11neupane@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px"></i>Pragya</a>
+     				<a href="#"><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px"></i>Check pdf resume</a>
+    			</div>
+    	</div>
+    </div>
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(e) {
+	  if (!e.target.matches('.contactDropbtn')) {
+	    var myDropdown = document.getElementById("myDropdown");
+	      if (myDropdown.classList.contains('show')) {
+	        myDropdown.classList.remove('show');
+	      }
+	  }
+	}
+	</script>
+
+	<div class="nameDisplay">
+		<p class="mainText">Hello! My name is<br>
+									 Pragya Neupane <br>
+											& <br>
+									I'd like to welcome you<br>
+									to my portfolio website.
+		</p>
+	</div>
+
+
+	<footer>
+		<p class="footerText">
+			<i class="fa fa-copyright"></i>2017 Pragya Neupane- All rights reserved
+		</p>
+	</footer>
+</body>
+</html>

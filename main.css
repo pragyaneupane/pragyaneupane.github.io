@@ -1,0 +1,142 @@
+body{
+	/*background-image: url("https://images7.alphacoders.com/760/760447.jpg");*/
+	background-size: cover;
+	background-repeat:no-repeat;
+	margin:0;
+}
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #25211e;
+    font-family: Arial;
+    padding: 7px;
+    border-bottom: 5px solid brown;
+ }
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.contactDropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 30px;
+    min-width: 160px;
+}
+.contactDropdown .contactDropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+.navbar a:hover, .contactDropdown:hover .contactDropbtn {
+    background-color: brown;
+}
+.contactDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.contactDropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.contactDropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+.nameDisplay{
+	font-size: 30px;
+	text-align: center;
+	margin:50px;
+	margin-left: 430px;
+	padding:20px;
+	padding-top: 80px;
+	color: white;
+}
+
+ul.workExpListbullets, ul.projectListbullets{
+	list-style-type: none;
+}
+li{
+	max-width: 90%;
+}
+footer{
+	background-color: #fff4e6;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	padding: 15px;
+}
+.footerText{
+	color: brown;
+}
+
+.education{
+	float:left;
+	display: inline-block;
+	width: 58%;
+	height:100%;
+	padding-left: 25px;
+}
+.skills{
+	float:left;
+	display: inline-block;
+	width:40%;
+	height: 100%;
+	font-size: 18px;
+}
+.education>ul{
+	list-style-type: none;
+}
+.education h3{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 15px;
+}
+.education h2{
+	margin-bottom: 20px;
+	margin-top: 0px;
+}
+.workExp{
+	margin-left: 55px;
+	margin-top: 30px;
+	max-width: 90%;
+}
+.workExpListbullets h3{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+}
+.workExpListbullets h2{
+	margin: 0px;
+	margin-bottom: 10px;
+}
+.education h1, .skills h1, .workExp h1, .projects h1{
+	color:brown;
+}
+.mainText{
+	text-align: center;
+	width: 300px;
+	padding: 20px;
+	background-color:rgba(0, 0, 0, 0.4);
+	
+}

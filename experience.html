@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experience</title>
+	<link rel="stylesheet" type="text/CSS" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background-color: #fff4e6">
+		<!--part of original navbar-->
+	<header class="navbar">
+ 	   <a href="index.html"><i class="fa fa-home"></i></a>
+	   <a href="about.html">ABOUT</a>
+	   <a href="experience.html">EXPERIENCE</a>
+	   <div class="contactDropdown">
+			<button class="contactDropbtn" onclick="myFunction()">CONTACT<i class="fa fa-caret-down"></i></button>
+				<div class="contactDropdown-content" id="myDropdown">
+      				<a href="mailto:prag11neupane@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="margin-right: 10px"></i>Pragya</a>
+     				<a href="#"><i class="fa fa-phone" aria-hidden="true" style="margin-right: 10px"></i>Check pdf resume</a>
+    			</div>
+    	</div>
+    </header>
+
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(e) {
+	  if (!e.target.matches('.contactDropbtn')) {
+	    var myDropdown = document.getElementById("myDropdown");
+	      if (myDropdown.classList.contains('show')) {
+	        myDropdown.classList.remove('show');
+	      }
+	  }
+	}
+	</script>
+	
+	
+	<div class="workExp">
+		<h1>Work Experience</h1>
+		<ul class="workExpListbullets">
+			<li><h3>Peak Performance, Calabasas, CA (November 2016-September 2017)<h3></li>
+			<li><h2>Software Developer<h2></li>
+			<ul style="font-size:18px;max-width:90%">
+				<li>Designed, developed, enhanced and maintained web and windows service applications using C#, ASP.NET MVC, Web APIs, SQL Server.</li>
+				<li>Performed frontend development using HTML, CSS, JavaScript, JQuery, backend development using SQL and middle-tier development using C#.</li>
+				<li>Programmed and deployed code in a segregated DEV/QA/PROD environment.</li>
+				<li>Performed test-driven development by building unit test and sending API requests using Postman.</li>
+			</ul>
+			<li><h3>Vienna Infosys Inc., Dallas, TX (May 2016-November 2017)<h3></li>
+			<li><h2>Software Developer Intern</h2></li>
+			<ul style="font-size:18px;max-width:90%">
+				<li>Practiced agile software development methodology and TFS version control in real time.</li>
+				<li>Designed web application using ASP.NET, C#, MVC, HTML, CSS, JavaScript and JQuery.</li>
+				<li>Performed create, read, update, and delete (CRUD) operations on consumer data by adopting Entity Framework to communicate with SQL Server database 2012.</li>
+			</ul>
+		</ul>
+	
+		<div class="projects">
+			<h1>Projects</h1>
+			<ul class="projectListbullets">
+				<li><h3>Intelligent Ground Vehicle Control System (Fall 2015, Group Project)</h3></li>
+				<ul>
+					<p style="font-size:18px;max-width: 90%">Designed and implemented a ground vehicle capable of linear and angular movement, and positioning itself based on user instruction using ZeroMQ library.</p>
+				</ul>
+				<li><h3>Image Processing (Fall 2015, Individual Project)</h3></li>
+				<ul>
+					<p style="font-size:18px;max-width: 90%">Applied image restoration algorithms to recover blurred images in MATLAB.</p>
+				</ul>
+				<li><h3>Android Application Development (Spring 2014, Group Project)</h3></li>
+				<ul>
+					<p style="font-size:18px;max-width: 90%">Implemented an Optical Character Recognition application that pre-processed and converted images into text files for easy edits and highlights.</p>
+				</ul>
+		</div>
+	</div>
+</body>
+</html>
